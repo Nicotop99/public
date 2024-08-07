@@ -1,0 +1,160 @@
+
+body { margin: 0; padding: 0; }
+
+
+.top{
+    display: flex;
+    background-color: rgba(5, 0, 255, 0.5);
+}
+.divTop1{
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+.divTop1 h1{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    color: white;
+    
+
+}
+.divTop1 h1:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.divTop2{
+    position: relative;
+    right: auto;
+    left: 0;
+
+}
+.divTop2 img{
+    height: 70px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.divCentro{
+    border: 2px solid red;
+}
+.furgone{
+    width: 55%;
+    position: fixed;
+    animation-name: furgoneAnim;
+    animation-duration: 2s;
+    left: 5%;
+    margin-top: 80px;
+
+}
+
+.nico_maik{
+    width: 45%;
+    position: fixed;
+    right: 5%;
+    animation-name: maikAnim;
+    animation-duration: 2s;
+}
+
+@keyframes furgoneAnim {
+    from {left: -100px;}
+    to {left: 5%;}
+  }
+
+  @keyframes maikAnim {
+    from {right: -100px;}
+    to {right: 5%;}
+  }
+  @keyframes textAnim {
+    from {left: -100px;}
+    to {left: 50%;
+    transform: translate(-50%,0);}
+  }
+
+  @keyframes buttonAnim {
+    from {left: 100px;}
+    to {left: 50%;
+        transform: translate(-50%,0);}
+  }
+
+
+
+  .divScopri{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    font-style: normal;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 25%;
+    border-radius: 10px;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.3);
+    animation-name: textAnim;
+    animation-duration: 2s;
+  }
+
+  .scopri{
+    background-color: rgba(255, 0, 0, 0.8);
+    border: none;
+    width: 55%;
+    height: 105px;
+    font-size: 53px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    position: fixed;
+    margin-top: 65%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: white;
+    border-radius: 20px;
+    animation-name: buttonAnim;
+    animation-duration: 2s;
+
+  }
+.divBottom{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.divBottom{
+    display: flex;
+}
+.divSocial{
+    display: flex;
+    text-align: center;
+    padding-right: 10px;
+
+}
+.divSocial img{
+    height: 50px;
+    padding: 10px;
+}
+
+.divB1{
+    width: 90%;
+}
+.socialText{
+    width: 100%;
+    text-align: center;
+}
+.divB1 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 10px;
+}
