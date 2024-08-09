@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+
+
+    
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    <!-- Add Bootstrap CSS for basic styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script type="module" src="script/firebase.js"></script>
+   <script src="script/crea_prodotto.js"></script>
+
+</head>
+<body>
+  
+ <script>
+    setTimeout(() => {
+        var auth = firebase.auth();
+        var currentUser = auth.currentUser;
+            console.log(currentUser);
+        if(auth.currentUser){
+            //login effettuato
+            
+
+        }else{
+            //login non effettuato
+            console.log(currentUser);
+
+        }
+    
+    
+    }, 1000);
+  
+ </script>
+
+
+<div class="login" id="divLogin">
+    <input type="email" id="email">
+    <input type="password" id="pass">
+    <button onclick="login()">Login</button>
+</div>
+
+
+
+<div class="creaP" id="creaP" style="display: none;">
+    <input type="file" accept="image/png, image/gif, image/jpeg" multiple id="img">
+    <input type="text" placeholder="Titolo" id="titolo">
+    <input type="text" placeholder="descrizione" id="desc">
+    <input type="checkbox" id="compreso">Compreso nel bagno
+    <input type="number" placeholder="Prezzo Maggiorato" id="prezzoM">
+    <select name="cars" id="categoria">
+        <option value="Water">Water</option>
+        <option value="Bidet">Bidet</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Box Doccia">Box Doccia</option>
+        <option value="Cassetta">Cassetta</option>
+        <option value="R. bidet">R. bidet</option>
+        <option value="R. Mobile">R. Mobile</option>
+        <option value="R. Doccia">R. Doccia</option>
+        <option value="Rivestimento">Rivestimento</option>
+        <option value="Pavimento">Pavimento</option>
+        <option value="Piatto Doccia">Piatto Doccia</option>
+        <option value="Termoarredo">Termoarredo</option>
+        <option value="Vasche">Vasche</option>
+        <option value="R. vasche">R. vasche</option>
+        <option value="Saliscendi">Saliscendi</option>
+      </select>
+      <button onclick="creaProdotto()">Crea</button>
+      <button onclick="gestisci()">Gestisci</button>
+</div>
+
+</body>
+</html>
