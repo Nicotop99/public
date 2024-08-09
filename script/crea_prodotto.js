@@ -45,10 +45,10 @@ function creaProdotto(){
     var titolo = document.getElementById("titolo").value;
     var desc = document.getElementById("desc").value;
     var img = document.getElementById("img").files;
-    var compreso = document.getElementById("compreso").value;
+    var compreso = document.getElementById("compreso").checked;
     var categoria = document.getElementById("categoria").value;
     var prezzoM = document.getElementById("prezzoM").value;
-    console.log(titolo,desc,img,compreso,categoria,prezzoM)
+    console.log(compreso)
 
     var db = firebase.firestore();
     console.log(img.length);
@@ -77,6 +77,7 @@ function creaProdotto(){
                console.log(docRef);
                db.collection(categoria).doc(docRef.id).update("id",docRef.id).then(()=>{
                 //caricato 
+                urlArray.splice(0,urlArray.length);
                })
 
            }).catch((error)=>{

@@ -32,7 +32,7 @@
 
       </div>
     </div>
-    <div class="divBottom">
+    <div class="divBottom" id="divBottom">
       <div class="divB1">
         <h1>Ceramiche Montecatini di Shehu Djane</h1>
         <h1>Codice fiscale: IT01331120475</h1>
@@ -48,5 +48,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var heigth = window.innerHeight;
+      console.log(heigth);
+      if(heigth < 1500){
+        //document.getElementById("divBottom").style.position = "relative";
+      }
+    </script>
+
   </body>
 </html>
