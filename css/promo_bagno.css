@@ -1,0 +1,122 @@
+
+body { margin: 0; padding: 0; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divTop2Bagno{
+    display: flex;
+}
+.divTop2Bagno button{
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    padding: 0px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.divTop2Bagno img{
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.titolo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    margin-right: 35px;
+}
+.div1{
+    display: flex;
+    margin-top: 30px;
+    height: 450px;
+}
+.desc{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-right: 60px;
+}
+.div11{
+    width: 100%;
+    text-align: center;
+}
+.div12{
+    display: flex;
+    margin-right: 30px;
+}
+.logo{
+    height: 150px;
+    position: relative;
+    margin-left: -30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+.nico_maikk{
+    height: 450px;
+    position: absolute;
+    margin-left: -50px;
+    z-index: 1;
+}
+.selezione{
+    position: relative;
+    margin-top: 30px;
+    display: grid;
+    grid-row: 10px  ;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    grid-template-columns: auto auto auto  ;
+    justify-items: center;
+
+    margin-bottom: 20px;
+}
+.sfondo{
+    position: relative;
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+}
+.water{
+    width: 300px;
+}
+.text{
+    display: flex;
+    position: relative;
+    top: 60px;
+    margin: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+    top: 90px;
+    border-radius: 10px;
+    
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+.text h1{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+}
