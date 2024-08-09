@@ -24,7 +24,7 @@ db.collection(categoria).get().then((doc)=>{
         document.getElementById("divProdotti2").innerHTML += `<div class="p2">
         <img src="${data.img[0]}">
                 
-                <h1 class="price">${data.prezzoM}</h1>
+                <h1 class="price">${data.prezzoM},00 €</h1>
                 <h1 class="title">${data.titolo}</h1>
 
     </div>`;
