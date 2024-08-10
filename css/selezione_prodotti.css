@@ -10,6 +10,7 @@
     transform: translate(-50%,0);
     grid-template-columns: auto auto auto  ;
     justify-items: center;
+    grid-row: 20px;
     margin-top: 20px;
 }
 .p h1{
